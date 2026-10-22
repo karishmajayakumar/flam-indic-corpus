@@ -1,0 +1,20 @@
+[
+  {
+    "text": "<poem>असतो मा सद्गमय।",
+    "source": "wikipedia_hi",
+    "dropped_by": "quality/markup",
+    "why_wrong": "Legitimate poem verse (Brihadaranyaka Upanishad mantra). The text is so short that a single <poem> tag pushes the HTML-tag ratio over the threshold. This is the poem case the brief warns about; accepted loss rather than special-casing <poem>, but recorded here."
+  },
+  {
+    "text": "ॐ शान्तिः शान्तिः शान्तिः ॥</poem>",
+    "source": "wikipedia_hi",
+    "dropped_by": "quality/markup",
+    "why_wrong": "Closing shanti mantra of a poem block, dropped for the same reason: tiny text + closing </poem> tag = high tag ratio. Legitimate verse, wrongly dropped."
+  },
+  {
+    "text": "सामुदायिक रेडियो ||इस लेख में विकिपीडिया के गुणवत्ता मापदंडों पर खरे उतरने के लिए सफ़ाई की आवश्यकता है। ... सामुदायिक रेडियो एक प्रकार की रेडियो सेवा है (FineWeb article, truncated)",
+    "source": "fineweb2_hin_Deva",
+    "dropped_by": "quality/too_many_urls",
+    "why_wrong": "A real, long Hindi article about community radio. The >2 URLs come from scraped page chrome/footer, not the article body. Our URL rule operates on the whole web page, so body text is collateral damage. Fix at scale: strip boilerplate before counting URLs, or count URLs only in the first/last portion."
+  }
+]
