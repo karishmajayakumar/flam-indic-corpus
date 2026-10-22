@@ -1,0 +1,6 @@
+data/raw/
+out/
+out2/
+*.tmp
+__pycache__/
+.DS_Store
