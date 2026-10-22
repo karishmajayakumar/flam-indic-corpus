@@ -1,0 +1,2 @@
+# Only needed for download.sh. The pipeline itself (run.sh) is stdlib-only.
+datasets==4.8.4
